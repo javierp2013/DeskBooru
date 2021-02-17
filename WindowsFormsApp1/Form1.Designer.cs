@@ -273,11 +273,11 @@
             // 
             // SubmitButton
             // 
-            this.SubmitButton.Location = new System.Drawing.Point(249, 492);
+            this.SubmitButton.Location = new System.Drawing.Point(305, 492);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(103, 23);
+            this.SubmitButton.Size = new System.Drawing.Size(31, 23);
             this.SubmitButton.TabIndex = 7;
-            this.SubmitButton.Text = "Submit Image";
+            this.SubmitButton.Text = ">";
             this.SubmitButton.UseVisualStyleBackColor = true;
             // 
             // label4
