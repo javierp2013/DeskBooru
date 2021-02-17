@@ -31,5 +31,10 @@ namespace WindowsFormsApp1
         {
             pictureBox1.BackColor = Color.Pink;
         }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

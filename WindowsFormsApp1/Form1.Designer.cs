@@ -279,6 +279,7 @@
             this.SubmitButton.TabIndex = 7;
             this.SubmitButton.Text = ">";
             this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // label4
             // 
