@@ -178,6 +178,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(231, 235);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
             // 
             // pictureBox2
             // 
