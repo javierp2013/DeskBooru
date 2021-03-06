@@ -110,5 +110,30 @@ namespace WindowsFormsApp1
             //change image in box to next one in array.
             AddFolderPictureBox.Load(GlobalStatics.ImageLocations[GlobalStatics.imageArrayindex]);
         }
+
+        private void AddImagesAddButton_Click(object sender, EventArgs e)
+        {
+            if(!String.IsNullOrEmpty(AddImageAddTagTextBox.Text))
+            {
+                string varTag1;
+                varTag1 = AddImageAddTagTextBox.Text;
+                AddImageAddTagTextBox.Clear();
+                AddImageCurrentTagTexBox.AppendText(varTag1);
+                AddImageCurrentTagTexBox.AppendText(", ");
+
+            }
+        }
+
+        private void AddFolderAddButton_Click(object sender, EventArgs e)
+        {
+            if(!String.IsNullOrEmpty(AddFolderAddTagTextBox.Text))
+            {
+                string varTag2;
+                varTag2 = AddFolderAddTagTextBox.Text;
+                AddFolderAddTagTextBox.Clear();
+                AddFolderCurrentTagTextBox.AppendText(varTag2);
+                AddFolderCurrentTagTextBox.AppendText(", ");
+            }
+        }
     }
 }
