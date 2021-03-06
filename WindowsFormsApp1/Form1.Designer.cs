@@ -80,6 +80,8 @@
             this.HelpPanelTextBox = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.clearTagsSingleButton = new System.Windows.Forms.Button();
+            this.clearTagsFolder = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.TabPanel1.SuspendLayout();
@@ -290,6 +292,7 @@
             // ImageTaggingPanel
             // 
             this.ImageTaggingPanel.BackColor = System.Drawing.Color.DimGray;
+            this.ImageTaggingPanel.Controls.Add(this.clearTagsSingleButton);
             this.ImageTaggingPanel.Controls.Add(this.label12);
             this.ImageTaggingPanel.Controls.Add(this.AddImagesAddButton);
             this.ImageTaggingPanel.Controls.Add(this.SubmitButton);
@@ -388,6 +391,7 @@
             this.AddImageAddTagTextBox.PlaceholderText = "Write a tag here to add";
             this.AddImageAddTagTextBox.Size = new System.Drawing.Size(195, 23);
             this.AddImageAddTagTextBox.TabIndex = 1;
+            this.AddImageAddTagTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddImageAddTagTextBox_KeyDown);
             // 
             // AddImageCurrentTagTexBox
             // 
@@ -402,6 +406,7 @@
             // AddFolderPanel
             // 
             this.AddFolderPanel.BackColor = System.Drawing.Color.DimGray;
+            this.AddFolderPanel.Controls.Add(this.clearTagsFolder);
             this.AddFolderPanel.Controls.Add(this.forwardButtonFolder);
             this.AddFolderPanel.Controls.Add(this.backButtonFolder);
             this.AddFolderPanel.Controls.Add(this.label11);
@@ -529,11 +534,13 @@
             // 
             // AddFolderAddTagTextBox
             // 
+            this.AddFolderAddTagTextBox.AcceptsReturn = true;
             this.AddFolderAddTagTextBox.Location = new System.Drawing.Point(95, 324);
             this.AddFolderAddTagTextBox.Name = "AddFolderAddTagTextBox";
             this.AddFolderAddTagTextBox.PlaceholderText = "Write a tag here to add";
             this.AddFolderAddTagTextBox.Size = new System.Drawing.Size(195, 23);
             this.AddFolderAddTagTextBox.TabIndex = 9;
+            this.AddFolderAddTagTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddFolderAddTagTextBox_KeyDown);
             // 
             // AddFolderCurrentTagTextBox
             // 
@@ -608,6 +615,26 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // clearTagsSingleButton
+            // 
+            this.clearTagsSingleButton.Location = new System.Drawing.Point(468, 464);
+            this.clearTagsSingleButton.Name = "clearTagsSingleButton";
+            this.clearTagsSingleButton.Size = new System.Drawing.Size(75, 23);
+            this.clearTagsSingleButton.TabIndex = 20;
+            this.clearTagsSingleButton.Text = "Clear Tags";
+            this.clearTagsSingleButton.UseVisualStyleBackColor = true;
+            this.clearTagsSingleButton.Click += new System.EventHandler(this.clearTagsSingleButton_Click);
+            // 
+            // clearTagsFolder
+            // 
+            this.clearTagsFolder.Location = new System.Drawing.Point(468, 464);
+            this.clearTagsFolder.Name = "clearTagsFolder";
+            this.clearTagsFolder.Size = new System.Drawing.Size(75, 23);
+            this.clearTagsFolder.TabIndex = 21;
+            this.clearTagsFolder.Text = "Clear Tags";
+            this.clearTagsFolder.UseVisualStyleBackColor = true;
+            this.clearTagsFolder.Click += new System.EventHandler(this.clearTagsFolder_Click);
             // 
             // Form1
             // 
@@ -702,6 +729,8 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button forwardButtonFolder;
         private System.Windows.Forms.Button backButtonFolder;
+        private System.Windows.Forms.Button clearTagsSingleButton;
+        private System.Windows.Forms.Button clearTagsFolder;
     }
 }
 

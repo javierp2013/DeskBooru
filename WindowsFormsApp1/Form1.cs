@@ -28,7 +28,6 @@ namespace WindowsFormsApp1
 
         private void TabPanel1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void triggerFolderDialog(object sender, EventArgs e)
@@ -115,11 +114,16 @@ namespace WindowsFormsApp1
         {
             if(!String.IsNullOrEmpty(AddImageAddTagTextBox.Text))
             {
-                string varTag1;
-                varTag1 = AddImageAddTagTextBox.Text;
+                string Tag;
+                Tag = AddImageAddTagTextBox.Text;
                 AddImageAddTagTextBox.Clear();
-                AddImageCurrentTagTexBox.AppendText(varTag1);
-                AddImageCurrentTagTexBox.AppendText(", ");
+                //add tag to List of tags if not already in, preventing duplicates
+                if (!GlobalStatics.currentTagsSingle.Contains(Tag))
+                {
+                    AddImageCurrentTagTexBox.AppendText(Tag);
+                    AddImageCurrentTagTexBox.AppendText(", ");
+                    GlobalStatics.currentTagsSingle.Add(Tag);
+                }
 
             }
         }
@@ -128,12 +132,54 @@ namespace WindowsFormsApp1
         {
             if(!String.IsNullOrEmpty(AddFolderAddTagTextBox.Text))
             {
-                string varTag2;
-                varTag2 = AddFolderAddTagTextBox.Text;
+                string Tag;
+                Tag = AddFolderAddTagTextBox.Text;
                 AddFolderAddTagTextBox.Clear();
-                AddFolderCurrentTagTextBox.AppendText(varTag2);
-                AddFolderCurrentTagTextBox.AppendText(", ");
+                //add tag to List of tags if not already in, preventing duplicates
+                if (!GlobalStatics.currentTagsFolder.Contains(Tag))
+                {
+                    AddFolderCurrentTagTextBox.AppendText(Tag);
+                    AddFolderCurrentTagTextBox.AppendText(", ");
+                    GlobalStatics.currentTagsFolder.Add(Tag);
+                }
+                
             }
+        }
+        //this function makes it so that when a user presses enter with the text box focused
+        //then the "add" button is clicked, more user intuitive.
+        private void AddFolderAddTagTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                AddFolderAddButton_Click(sender, e);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        //this function makes it so that when a user presses enter with the text box focused
+        //then the "add" button is clicked, more user intuitive.
+        private void AddImageAddTagTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                AddImagesAddButton_Click(sender, e);
+                //these two functions prevent windows from making a "DING" when the enter button is pressed
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void clearTagsFolder_Click(object sender, EventArgs e)
+        {
+            GlobalStatics.currentTagsFolder.Clear();
+            AddFolderCurrentTagTextBox.Clear();
+        }
+
+        private void clearTagsSingleButton_Click(object sender, EventArgs e)
+        {
+            GlobalStatics.currentTagsSingle.Clear();
+            AddImageCurrentTagTexBox.Clear();
         }
     }
 }
