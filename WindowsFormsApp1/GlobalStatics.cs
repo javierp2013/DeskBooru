@@ -13,6 +13,8 @@ namespace DeskBooruApp
         //this List will keep track of the current images tags, yet to be commited to the database.
         internal static List<string> currentTagsSingle = new List<string>();
         //this one is for the addFolder tab of the application, so they do not interfere with one another
-        internal static List<string> currentTagsFolder = new List<string>(); 
+        internal static List<string> currentTagsFolder = new List<string>();
+        //this one if for consolidating every tag list from the folders and the single images
+        internal static List<string> entireTagList = new List<string>();
     }
 }

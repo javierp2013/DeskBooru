@@ -62,6 +62,8 @@
             this.AddImageAddTagTextBox = new System.Windows.Forms.TextBox();
             this.AddImageCurrentTagTexBox = new System.Windows.Forms.TextBox();
             this.AddFolderPanel = new System.Windows.Forms.TabPage();
+            this.DeleteFolderTagTextBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.clearTagsFolder = new System.Windows.Forms.Button();
             this.forwardButtonFolder = new System.Windows.Forms.Button();
             this.backButtonFolder = new System.Windows.Forms.Button();
@@ -84,8 +86,7 @@
             this.HelpPanelTextBox = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label14 = new System.Windows.Forms.Label();
-            this.DeleteFolderTagTextBox = new System.Windows.Forms.TextBox();
+            this.TagListButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.TabPanel1.SuspendLayout();
@@ -462,6 +463,23 @@
             this.AddFolderPanel.TabIndex = 2;
             this.AddFolderPanel.Text = "Add Folder";
             // 
+            // DeleteFolderTagTextBox
+            // 
+            this.DeleteFolderTagTextBox.Location = new System.Drawing.Point(95, 335);
+            this.DeleteFolderTagTextBox.Name = "DeleteFolderTagTextBox";
+            this.DeleteFolderTagTextBox.PlaceholderText = "Write a tag here to delete";
+            this.DeleteFolderTagTextBox.Size = new System.Drawing.Size(192, 23);
+            this.DeleteFolderTagTextBox.TabIndex = 23;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(28, 339);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(61, 15);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "Delete Tag";
+            // 
             // clearTagsFolder
             // 
             this.clearTagsFolder.Location = new System.Drawing.Point(295, 335);
@@ -609,6 +627,7 @@
             // TagListPanel
             // 
             this.TagListPanel.BackColor = System.Drawing.Color.DimGray;
+            this.TagListPanel.Controls.Add(this.TagListButton);
             this.TagListPanel.Controls.Add(this.TagListRichTexBox);
             this.TagListPanel.Location = new System.Drawing.Point(4, 24);
             this.TagListPanel.Name = "TagListPanel";
@@ -619,9 +638,10 @@
             // 
             // TagListRichTexBox
             // 
-            this.TagListRichTexBox.Location = new System.Drawing.Point(10, 5);
+            this.TagListRichTexBox.Location = new System.Drawing.Point(18, 112);
             this.TagListRichTexBox.Name = "TagListRichTexBox";
-            this.TagListRichTexBox.Size = new System.Drawing.Size(935, 411);
+            this.TagListRichTexBox.ReadOnly = true;
+            this.TagListRichTexBox.Size = new System.Drawing.Size(920, 453);
             this.TagListRichTexBox.TabIndex = 0;
             this.TagListRichTexBox.Text = "Will have a list of tags here soon";
             // 
@@ -661,22 +681,15 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // label14
+            // TagListButton
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(28, 339);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(61, 15);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "Delete Tag";
-            // 
-            // DeleteFolderTagTextBox
-            // 
-            this.DeleteFolderTagTextBox.Location = new System.Drawing.Point(95, 335);
-            this.DeleteFolderTagTextBox.Name = "DeleteFolderTagTextBox";
-            this.DeleteFolderTagTextBox.PlaceholderText = "Write a tag here to delete";
-            this.DeleteFolderTagTextBox.Size = new System.Drawing.Size(192, 23);
-            this.DeleteFolderTagTextBox.TabIndex = 23;
+            this.TagListButton.Location = new System.Drawing.Point(18, 37);
+            this.TagListButton.Name = "TagListButton";
+            this.TagListButton.Size = new System.Drawing.Size(150, 44);
+            this.TagListButton.TabIndex = 1;
+            this.TagListButton.Text = "View All Tags";
+            this.TagListButton.UseVisualStyleBackColor = true;
+            this.TagListButton.Click += new System.EventHandler(this.TagListButton_Click);
             // 
             // Form1
             // 
@@ -777,6 +790,7 @@
         private System.Windows.Forms.TextBox AddImageDeleteTagTextBox;
         private System.Windows.Forms.TextBox DeleteFolderTagTextBox;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button TagListButton;
     }
 }
 

@@ -237,5 +237,42 @@ namespace WindowsFormsApp1
             }
             AddImageDeleteTagTextBox.Clear();
         }
+
+        private void TagListButton_Click(object sender, EventArgs e)
+        {
+            GlobalStatics.entireTagList.Clear();
+            string Tag;
+         
+            // Goes through the currentTagsFolder List and adds it to an entire list of tags
+            // making sure that there are no duplicates in tags.
+            for (int i = 0; i < GlobalStatics.currentTagsFolder.Count; i++)
+            {
+                Tag = GlobalStatics.currentTagsFolder[i];
+                if(!GlobalStatics.entireTagList.Contains(Tag))
+                {
+                    GlobalStatics.entireTagList.Add(Tag);
+                }
+            }
+
+            // Goes through the currentTagsSingle List and adds it to an entire list of tags
+            // making sure that there are no duplicates in tags.
+            for (int j = 0; j < GlobalStatics.currentTagsSingle.Count; j++)
+            {
+                Tag = GlobalStatics.currentTagsSingle[j];
+                if (!GlobalStatics.entireTagList.Contains(Tag))
+                {
+                    GlobalStatics.entireTagList.Add(Tag);
+                }
+            }
+
+            // Displays all the tags from entrieTagList
+            TagListRichTexBox.Clear();
+            GlobalStatics.entireTagList.Sort();
+            foreach ( string var in GlobalStatics.entireTagList)
+            {
+                TagListRichTexBox.AppendText(var);
+                TagListRichTexBox.AppendText(", ");
+            }    
+        }
     }
 }
