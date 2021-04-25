@@ -90,7 +90,6 @@ namespace DeskBooruApp
             // 
             // InfoSaveButton
             // 
-            this.InfoSaveButton.BackgroundImage = global::DeskBooruApp.Properties.Resources.DarkGradient;
             this.InfoSaveButton.FlatAppearance.BorderSize = 0;
             this.InfoSaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InfoSaveButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -107,7 +106,6 @@ namespace DeskBooruApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BackgroundImage = global::DeskBooruApp.Properties.Resources.DarkGradient;
             this.ClientSize = new System.Drawing.Size(506, 688);
             this.Controls.Add(this.InfoSaveButton);
             this.Controls.Add(this.InfoCommentTextBox);
