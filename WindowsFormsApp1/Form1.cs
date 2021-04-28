@@ -286,23 +286,29 @@ namespace WindowsFormsApp1
         //TODO move this to Database.cs
         private void TagListRichTexBox_TextChanged(object sender, EventArgs e)
         {
-            //Attempting to print tags into textbox
-            string text = " ";
+        }
+        //Pressing Refresh Button Loads All The Tags
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string tagList = "";
             Database db = new Database();
-            string query = "Print SELECT * FROM tags";
+            string query = "SELECT * FROM tags";
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             db.OpenConnection();
-            var result = myCommand.ExecuteNonQuery();
             SQLiteDataReader DR1 = myCommand.ExecuteReader();
-            if (DR1.Read())
+            while (DR1.Read())
             {
-                text += DR1.GetValue(0).ToString();
-                text += "/n";
+                tagList += DR1.GetString(1);
+                tagList += "\n";
             }
-            TagListRichTexBox.Text = text;
+            TagListRichTexBox.Text = tagList;
             db.CloseConnection();
             db.dispose();
-            Application.DoEvents();
+        }
+
+        public void WireUpPeopleList()
+        {
+            
         }
         // This section of code is for all the picture boxes to open the Form 2
         // So we can change what we can in one small place rather than looking for it
@@ -361,7 +367,9 @@ namespace WindowsFormsApp1
                 //these two functions prevent windows from making a "DING" when the enter button is pressed
                 e.Handled = true;
                 e.SuppressKeyPress = true;
+
             }
         }
+
     }
 }

@@ -86,6 +86,7 @@
             this.AddFolderCurrentTagTextBox = new System.Windows.Forms.TextBox();
             this.AddFolderPictureBox = new System.Windows.Forms.PictureBox();
             this.TagListPanel = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.TagListRichTexBox = new System.Windows.Forms.RichTextBox();
             this.HelpPanel = new System.Windows.Forms.TabPage();
             this.HelpPanelPictureBox = new System.Windows.Forms.PictureBox();
@@ -849,6 +850,7 @@
             // 
             this.TagListPanel.BackColor = System.Drawing.Color.DimGray;
             this.TagListPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TagListPanel.BackgroundImage")));
+            this.TagListPanel.Controls.Add(this.button2);
             this.TagListPanel.Controls.Add(this.TagListRichTexBox);
             this.TagListPanel.Location = new System.Drawing.Point(4, 24);
             this.TagListPanel.Name = "TagListPanel";
@@ -856,6 +858,16 @@
             this.TagListPanel.Size = new System.Drawing.Size(956, 581);
             this.TagListPanel.TabIndex = 3;
             this.TagListPanel.Text = "Tag List";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(460, 436);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Refresh";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // TagListRichTexBox
             // 
@@ -865,7 +877,6 @@
             this.TagListRichTexBox.Size = new System.Drawing.Size(877, 411);
             this.TagListRichTexBox.TabIndex = 0;
             this.TagListRichTexBox.Text = "Will have a list of tags here soon";
-            this.TagListRichTexBox.TextChanged += new System.EventHandler(this.TagListRichTexBox_TextChanged);
             // 
             // HelpPanel
             // 
@@ -1441,6 +1452,7 @@
         private System.Windows.Forms.PictureBox Fav11;
         private System.Windows.Forms.PictureBox Fave12;
         private System.Windows.Forms.PictureBox Fave11;
+        private System.Windows.Forms.Button button2;
     }
 }
 
