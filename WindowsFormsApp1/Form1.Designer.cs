@@ -36,7 +36,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.TabPanel1 = new System.Windows.Forms.TabControl();
+            this.GalleriesImageTab = new System.Windows.Forms.TabControl();
             this.SearchPanel = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -87,9 +87,6 @@
             this.AddFolderPictureBox = new System.Windows.Forms.PictureBox();
             this.TagListPanel = new System.Windows.Forms.TabPage();
             this.TagListRichTexBox = new System.Windows.Forms.RichTextBox();
-            this.HelpPanel = new System.Windows.Forms.TabPage();
-            this.HelpPanelPictureBox = new System.Windows.Forms.PictureBox();
-            this.HelpPanelTextBox = new System.Windows.Forms.TextBox();
             this.GalleriesPanel = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -121,11 +118,31 @@
             this.Fave3 = new System.Windows.Forms.PictureBox();
             this.Fave2 = new System.Windows.Forms.PictureBox();
             this.Fave1 = new System.Windows.Forms.PictureBox();
+            this.HelpPanel = new System.Windows.Forms.TabPage();
+            this.HelpPanelPictureBox = new System.Windows.Forms.PictureBox();
+            this.HelpPanelTextBox = new System.Windows.Forms.TextBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.gallBox15 = new System.Windows.Forms.PictureBox();
+            this.gallBox14 = new System.Windows.Forms.PictureBox();
+            this.gallBox13 = new System.Windows.Forms.PictureBox();
+            this.gallBox12 = new System.Windows.Forms.PictureBox();
+            this.gallBox10 = new System.Windows.Forms.PictureBox();
+            this.gallBox9 = new System.Windows.Forms.PictureBox();
+            this.gallBox8 = new System.Windows.Forms.PictureBox();
+            this.gallBox7 = new System.Windows.Forms.PictureBox();
+            this.gallBox11 = new System.Windows.Forms.PictureBox();
+            this.gallBox6 = new System.Windows.Forms.PictureBox();
+            this.gallBox5 = new System.Windows.Forms.PictureBox();
+            this.gallBox4 = new System.Windows.Forms.PictureBox();
+            this.gallBox3 = new System.Windows.Forms.PictureBox();
+            this.gallBox2 = new System.Windows.Forms.PictureBox();
+            this.gallBox1 = new System.Windows.Forms.PictureBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.TabPanel1.SuspendLayout();
+            this.GalleriesImageTab.SuspendLayout();
             this.SearchPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -141,8 +158,6 @@
             this.AddFolderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AddFolderPictureBox)).BeginInit();
             this.TagListPanel.SuspendLayout();
-            this.HelpPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HelpPanelPictureBox)).BeginInit();
             this.GalleriesPanel.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -165,6 +180,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.Fave3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fave2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fave1)).BeginInit();
+            this.HelpPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HelpPanelPictureBox)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // searchTextBox
@@ -247,21 +281,22 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Welcome to DeskBooru!";
             // 
-            // TabPanel1
+            // GalleriesImageTab
             // 
-            this.TabPanel1.Controls.Add(this.SearchPanel);
-            this.TabPanel1.Controls.Add(this.ImageTaggingPanel);
-            this.TabPanel1.Controls.Add(this.AddFolderPanel);
-            this.TabPanel1.Controls.Add(this.TagListPanel);
-            this.TabPanel1.Controls.Add(this.HelpPanel);
-            this.TabPanel1.Controls.Add(this.GalleriesPanel);
-            this.TabPanel1.Controls.Add(this.FavoritePanel);
-            this.TabPanel1.Location = new System.Drawing.Point(183, 2);
-            this.TabPanel1.Name = "TabPanel1";
-            this.TabPanel1.SelectedIndex = 0;
-            this.TabPanel1.Size = new System.Drawing.Size(964, 609);
-            this.TabPanel1.TabIndex = 9;
-            this.TabPanel1.SelectedIndexChanged += new System.EventHandler(this.TabPanel1_SelectedIndexChanged);
+            this.GalleriesImageTab.Controls.Add(this.SearchPanel);
+            this.GalleriesImageTab.Controls.Add(this.ImageTaggingPanel);
+            this.GalleriesImageTab.Controls.Add(this.AddFolderPanel);
+            this.GalleriesImageTab.Controls.Add(this.TagListPanel);
+            this.GalleriesImageTab.Controls.Add(this.GalleriesPanel);
+            this.GalleriesImageTab.Controls.Add(this.FavoritePanel);
+            this.GalleriesImageTab.Controls.Add(this.HelpPanel);
+            this.GalleriesImageTab.Controls.Add(this.tabPage1);
+            this.GalleriesImageTab.Location = new System.Drawing.Point(183, 2);
+            this.GalleriesImageTab.Name = "GalleriesImageTab";
+            this.GalleriesImageTab.SelectedIndex = 0;
+            this.GalleriesImageTab.Size = new System.Drawing.Size(964, 609);
+            this.GalleriesImageTab.TabIndex = 9;
+            this.GalleriesImageTab.SelectedIndexChanged += new System.EventHandler(this.TabPanel1_SelectedIndexChanged);
             // 
             // SearchPanel
             // 
@@ -867,39 +902,6 @@
             this.TagListRichTexBox.Text = "Will have a list of tags here soon";
             this.TagListRichTexBox.TextChanged += new System.EventHandler(this.TagListRichTexBox_TextChanged);
             // 
-            // HelpPanel
-            // 
-            this.HelpPanel.BackColor = System.Drawing.Color.DimGray;
-            this.HelpPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HelpPanel.BackgroundImage")));
-            this.HelpPanel.Controls.Add(this.HelpPanelPictureBox);
-            this.HelpPanel.Controls.Add(this.HelpPanelTextBox);
-            this.HelpPanel.Location = new System.Drawing.Point(4, 24);
-            this.HelpPanel.Name = "HelpPanel";
-            this.HelpPanel.Padding = new System.Windows.Forms.Padding(3);
-            this.HelpPanel.Size = new System.Drawing.Size(956, 581);
-            this.HelpPanel.TabIndex = 4;
-            this.HelpPanel.Text = "Help";
-            // 
-            // HelpPanelPictureBox
-            // 
-            this.HelpPanelPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HelpPanelPictureBox.BackgroundImage")));
-            this.HelpPanelPictureBox.Location = new System.Drawing.Point(579, 68);
-            this.HelpPanelPictureBox.Name = "HelpPanelPictureBox";
-            this.HelpPanelPictureBox.Size = new System.Drawing.Size(268, 440);
-            this.HelpPanelPictureBox.TabIndex = 1;
-            this.HelpPanelPictureBox.TabStop = false;
-            // 
-            // HelpPanelTextBox
-            // 
-            this.HelpPanelTextBox.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HelpPanelTextBox.Location = new System.Drawing.Point(63, 25);
-            this.HelpPanelTextBox.Multiline = true;
-            this.HelpPanelTextBox.Name = "HelpPanelTextBox";
-            this.HelpPanelTextBox.ReadOnly = true;
-            this.HelpPanelTextBox.Size = new System.Drawing.Size(867, 535);
-            this.HelpPanelTextBox.TabIndex = 0;
-            this.HelpPanelTextBox.Text = resources.GetString("HelpPanelTextBox.Text");
-            // 
             // GalleriesPanel
             // 
             this.GalleriesPanel.BackColor = System.Drawing.Color.DimGray;
@@ -1274,6 +1276,238 @@
             this.Fave1.TabStop = false;
             this.Fave1.Click += new System.EventHandler(this.Fave_Click);
             // 
+            // HelpPanel
+            // 
+            this.HelpPanel.BackColor = System.Drawing.Color.DimGray;
+            this.HelpPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HelpPanel.BackgroundImage")));
+            this.HelpPanel.Controls.Add(this.HelpPanelPictureBox);
+            this.HelpPanel.Controls.Add(this.HelpPanelTextBox);
+            this.HelpPanel.Location = new System.Drawing.Point(4, 24);
+            this.HelpPanel.Name = "HelpPanel";
+            this.HelpPanel.Padding = new System.Windows.Forms.Padding(3);
+            this.HelpPanel.Size = new System.Drawing.Size(956, 581);
+            this.HelpPanel.TabIndex = 4;
+            this.HelpPanel.Text = "Help";
+            // 
+            // HelpPanelPictureBox
+            // 
+            this.HelpPanelPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HelpPanelPictureBox.BackgroundImage")));
+            this.HelpPanelPictureBox.Location = new System.Drawing.Point(579, 68);
+            this.HelpPanelPictureBox.Name = "HelpPanelPictureBox";
+            this.HelpPanelPictureBox.Size = new System.Drawing.Size(268, 440);
+            this.HelpPanelPictureBox.TabIndex = 1;
+            this.HelpPanelPictureBox.TabStop = false;
+            // 
+            // HelpPanelTextBox
+            // 
+            this.HelpPanelTextBox.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HelpPanelTextBox.Location = new System.Drawing.Point(63, 25);
+            this.HelpPanelTextBox.Multiline = true;
+            this.HelpPanelTextBox.Name = "HelpPanelTextBox";
+            this.HelpPanelTextBox.ReadOnly = true;
+            this.HelpPanelTextBox.Size = new System.Drawing.Size(867, 535);
+            this.HelpPanelTextBox.TabIndex = 0;
+            this.HelpPanelTextBox.Text = resources.GetString("HelpPanelTextBox.Text");
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.panel4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(956, 581);
+            this.tabPage1.TabIndex = 7;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::DeskBooruApp.Properties.Resources.BG_Galleries;
+            this.panel4.Controls.Add(this.gallBox15);
+            this.panel4.Controls.Add(this.gallBox14);
+            this.panel4.Controls.Add(this.gallBox13);
+            this.panel4.Controls.Add(this.gallBox12);
+            this.panel4.Controls.Add(this.gallBox10);
+            this.panel4.Controls.Add(this.gallBox9);
+            this.panel4.Controls.Add(this.gallBox8);
+            this.panel4.Controls.Add(this.gallBox7);
+            this.panel4.Controls.Add(this.gallBox11);
+            this.panel4.Controls.Add(this.gallBox6);
+            this.panel4.Controls.Add(this.gallBox5);
+            this.panel4.Controls.Add(this.gallBox4);
+            this.panel4.Controls.Add(this.gallBox3);
+            this.panel4.Controls.Add(this.gallBox2);
+            this.panel4.Controls.Add(this.gallBox1);
+            this.panel4.Location = new System.Drawing.Point(-4, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(959, 581);
+            this.panel4.TabIndex = 0;
+            // 
+            // gallBox15
+            // 
+            this.gallBox15.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox15.Location = new System.Drawing.Point(774, 397);
+            this.gallBox15.Name = "gallBox15";
+            this.gallBox15.Size = new System.Drawing.Size(150, 150);
+            this.gallBox15.TabIndex = 14;
+            this.gallBox15.TabStop = false;
+            this.gallBox15.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox14
+            // 
+            this.gallBox14.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox14.Location = new System.Drawing.Point(599, 397);
+            this.gallBox14.Name = "gallBox14";
+            this.gallBox14.Size = new System.Drawing.Size(150, 150);
+            this.gallBox14.TabIndex = 13;
+            this.gallBox14.TabStop = false;
+            this.gallBox14.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox13
+            // 
+            this.gallBox13.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox13.Location = new System.Drawing.Point(425, 397);
+            this.gallBox13.Name = "gallBox13";
+            this.gallBox13.Size = new System.Drawing.Size(150, 150);
+            this.gallBox13.TabIndex = 12;
+            this.gallBox13.TabStop = false;
+            this.gallBox13.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox12
+            // 
+            this.gallBox12.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox12.Location = new System.Drawing.Point(249, 397);
+            this.gallBox12.Name = "gallBox12";
+            this.gallBox12.Size = new System.Drawing.Size(150, 150);
+            this.gallBox12.TabIndex = 11;
+            this.gallBox12.TabStop = false;
+            this.gallBox12.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox10
+            // 
+            this.gallBox10.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox10.Location = new System.Drawing.Point(774, 224);
+            this.gallBox10.Name = "gallBox10";
+            this.gallBox10.Size = new System.Drawing.Size(150, 150);
+            this.gallBox10.TabIndex = 10;
+            this.gallBox10.TabStop = false;
+            this.gallBox10.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox9
+            // 
+            this.gallBox9.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox9.Location = new System.Drawing.Point(599, 224);
+            this.gallBox9.Name = "gallBox9";
+            this.gallBox9.Size = new System.Drawing.Size(150, 150);
+            this.gallBox9.TabIndex = 9;
+            this.gallBox9.TabStop = false;
+            this.gallBox9.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox8
+            // 
+            this.gallBox8.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox8.Location = new System.Drawing.Point(425, 224);
+            this.gallBox8.Name = "gallBox8";
+            this.gallBox8.Size = new System.Drawing.Size(150, 150);
+            this.gallBox8.TabIndex = 8;
+            this.gallBox8.TabStop = false;
+            this.gallBox8.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox7
+            // 
+            this.gallBox7.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox7.Location = new System.Drawing.Point(249, 224);
+            this.gallBox7.Name = "gallBox7";
+            this.gallBox7.Size = new System.Drawing.Size(150, 150);
+            this.gallBox7.TabIndex = 7;
+            this.gallBox7.TabStop = false;
+            this.gallBox7.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox11
+            // 
+            this.gallBox11.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox11.Location = new System.Drawing.Point(72, 397);
+            this.gallBox11.Name = "gallBox11";
+            this.gallBox11.Size = new System.Drawing.Size(150, 150);
+            this.gallBox11.TabIndex = 6;
+            this.gallBox11.TabStop = false;
+            this.gallBox11.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox6
+            // 
+            this.gallBox6.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox6.Location = new System.Drawing.Point(72, 224);
+            this.gallBox6.Name = "gallBox6";
+            this.gallBox6.Size = new System.Drawing.Size(150, 150);
+            this.gallBox6.TabIndex = 5;
+            this.gallBox6.TabStop = false;
+            this.gallBox6.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox5
+            // 
+            this.gallBox5.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox5.Location = new System.Drawing.Point(774, 50);
+            this.gallBox5.Name = "gallBox5";
+            this.gallBox5.Size = new System.Drawing.Size(150, 150);
+            this.gallBox5.TabIndex = 4;
+            this.gallBox5.TabStop = false;
+            this.gallBox5.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox4
+            // 
+            this.gallBox4.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox4.Location = new System.Drawing.Point(599, 50);
+            this.gallBox4.Name = "gallBox4";
+            this.gallBox4.Size = new System.Drawing.Size(150, 150);
+            this.gallBox4.TabIndex = 3;
+            this.gallBox4.TabStop = false;
+            this.gallBox4.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox3
+            // 
+            this.gallBox3.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox3.Location = new System.Drawing.Point(425, 50);
+            this.gallBox3.Name = "gallBox3";
+            this.gallBox3.Size = new System.Drawing.Size(150, 150);
+            this.gallBox3.TabIndex = 2;
+            this.gallBox3.TabStop = false;
+            this.gallBox3.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox2
+            // 
+            this.gallBox2.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox2.Location = new System.Drawing.Point(249, 50);
+            this.gallBox2.Name = "gallBox2";
+            this.gallBox2.Size = new System.Drawing.Size(150, 150);
+            this.gallBox2.TabIndex = 1;
+            this.gallBox2.TabStop = false;
+            this.gallBox2.Click += new System.EventHandler(this.Fave_Click);
+            // 
+            // gallBox1
+            // 
+            this.gallBox1.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
+            this.gallBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gallBox1.Location = new System.Drawing.Point(72, 50);
+            this.gallBox1.Name = "gallBox1";
+            this.gallBox1.Size = new System.Drawing.Size(150, 150);
+            this.gallBox1.TabIndex = 0;
+            this.gallBox1.TabStop = false;
+            this.gallBox1.Click += new System.EventHandler(this.Fave_Click);
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -1287,7 +1521,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1154, 623);
-            this.Controls.Add(this.TabPanel1);
+            this.Controls.Add(this.GalleriesImageTab);
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1296,7 +1530,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.TabPanel1.ResumeLayout(false);
+            this.GalleriesImageTab.ResumeLayout(false);
             this.SearchPanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1314,9 +1548,6 @@
             this.AddFolderPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AddFolderPictureBox)).EndInit();
             this.TagListPanel.ResumeLayout(false);
-            this.HelpPanel.ResumeLayout(false);
-            this.HelpPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HelpPanelPictureBox)).EndInit();
             this.GalleriesPanel.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -1340,6 +1571,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.Fave3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fave2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fave1)).EndInit();
+            this.HelpPanel.ResumeLayout(false);
+            this.HelpPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HelpPanelPictureBox)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gallBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1351,7 +1602,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TabControl TabPanel1;
+        private System.Windows.Forms.TabControl GalleriesImageTab;
         private System.Windows.Forms.TabPage SearchPanel;
         private System.Windows.Forms.TabPage ImageTaggingPanel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -1441,6 +1692,25 @@
         private System.Windows.Forms.PictureBox Fav11;
         private System.Windows.Forms.PictureBox Fave12;
         private System.Windows.Forms.PictureBox Fave11;
+        private System.Windows.Forms.TabControl GalleriesImages;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl Galleries;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox gallBox6;
+        private System.Windows.Forms.PictureBox gallBox5;
+        private System.Windows.Forms.PictureBox gallBox4;
+        private System.Windows.Forms.PictureBox gallBox3;
+        private System.Windows.Forms.PictureBox gallBox2;
+        private System.Windows.Forms.PictureBox gallBox1;
+        private System.Windows.Forms.PictureBox gallBox15;
+        private System.Windows.Forms.PictureBox gallBox14;
+        private System.Windows.Forms.PictureBox gallBox13;
+        private System.Windows.Forms.PictureBox gallBox12;
+        private System.Windows.Forms.PictureBox gallBox10;
+        private System.Windows.Forms.PictureBox gallBox9;
+        private System.Windows.Forms.PictureBox gallBox8;
+        private System.Windows.Forms.PictureBox gallBox7;
+        private System.Windows.Forms.PictureBox gallBox11;
     }
 }
 
