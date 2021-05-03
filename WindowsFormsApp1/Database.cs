@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.Diagnostics;
 using System.Text;
 
 namespace DeskBooruApp
@@ -43,7 +44,7 @@ namespace DeskBooruApp
             //using an upsert so if function tries to write row that already has a certain image_path
             //do nothing!
             string query = "INSERT INTO images(created_at, image_width, image_height, aspect_ratio, image_format, image_path) " +
-                "VALUES(@createdAt, @width, @height, @Aratio, @format, @path) ON CONFLICT(image_path) DO NOTHING";
+                "VALUES(@createdAt, @width, @height, @Aratio, @format, @path) ON CONFLICT (image_path) DO NOTHING;";
             SQLiteCommand myCommand = new SQLiteCommand(query, this.myConnection);
             this.OpenConnection();
             myCommand.Parameters.AddWithValue("@createdAt", createdAt);
@@ -52,11 +53,13 @@ namespace DeskBooruApp
             myCommand.Parameters.AddWithValue("@Aratio", aspectRatio);
             myCommand.Parameters.AddWithValue("@format", format);
             myCommand.Parameters.AddWithValue("@path", path);
+
             var result = myCommand.ExecuteNonQuery();
 
             //here we SELECT for the row with that path, should only be one image
-            using var commd = new SQLiteCommand("SELECT ID FROM images WHERE image_path = '@path'", this.myConnection);
+            using var commd = new SQLiteCommand("SELECT ID FROM images WHERE image_path = @path", this.myConnection);
             commd.Parameters.AddWithValue("@path", path);
+
             using SQLiteDataReader rdr = commd.ExecuteReader();
             while(rdr.Read())
             {
@@ -131,7 +134,7 @@ namespace DeskBooruApp
 
         public void all_Tags()
         {
-            string query = "SELECT * FROM tags";
+            string query = "Print SELECT * FROM tags";
             SQLiteCommand myCommand = new SQLiteCommand(query, this.myConnection);
             this.OpenConnection();
             var result = myCommand.ExecuteNonQuery();
@@ -150,8 +153,9 @@ namespace DeskBooruApp
 
         /// #3:
 
-        public void favorite_Image(string userInput)
+        public bool favorite_Image(string userInput)
         {
+            bool passed = true;
             string query = "INSERT INTO favorites (image_id, created_at) VALUES (@input, @date)";
             SQLiteCommand myCommand = new SQLiteCommand(query, this.myConnection);
             this.OpenConnection();
@@ -159,6 +163,15 @@ namespace DeskBooruApp
             myCommand.Parameters.AddWithValue("@date", System.DateTime.Now.ToShortDateString());
             var result = myCommand.ExecuteNonQuery();
             this.CloseConnection();
+            if(myCommand.IsNullOrEmpty(userInput))
+            {
+                passed = true;
+            }
+            else
+            {
+                passed = false;
+            }
+            return passed;
         }
 
         public void favorite_By_Date(string userInput)
@@ -182,7 +195,7 @@ namespace DeskBooruApp
                 var command = this.myConnection.CreateCommand();
                 //using a subquery, we switch the tag name for an ID by referencing the DB
                 command.CommandText =
-                "INSERT INTO image_tags (image_id, tag_id) VALUES (@ImgID, (SELECT tag_id FROM tags WHERE tag_name = @tagName));";
+                "INSERT OR IGNORE INTO image_tags (image_id, tag_id) VALUES (@ImgID, (SELECT tag_id FROM tags WHERE tag_name = @tagName));";
 
                 var parameter = command.CreateParameter();
                 parameter.ParameterName = "@tagName";
@@ -200,12 +213,44 @@ namespace DeskBooruApp
             this.CloseConnection();
         }
 
+        //this function will take a series of tags and try to match images with that combination of tags
+        //So this one kinda takes user input and pastes it into the SQL directly
+        //BAD IDEA!! But, one cannot pass multiple values in a single parameter, and iterating through it is probably a better idea
+        //Fix this maybe!
+        public List<string> image_search(List<string> tagList)
+        {
+            //construct string
+            string tagString = "'" + String.Join("', '", tagList.ToArray()) + "'";
+
+
+            //somewhat complex query adapted from https://stackoverflow.com/questions/3876240/need-help-with-sql-query-to-find-things-tagged-with-all-specified-tags/3876276#3876276
+            //what we need to do is format the tags into something like 'tag1', 'tag2' and then also provide the number of tags
+            string query = "SELECT images.image_path FROM images " +
+                "WHERE images.ID IN (SELECT tg.image_id " +
+                "FROM image_tags tg " +
+                "JOIN tags ON tags.tag_id = tg.tag_id " +
+                $"WHERE tags.tag_name IN ({tagString}) " +
+                "GROUP BY tg.image_id " +
+                $"HAVING COUNT(DISTINCT tags.tag_name) = {tagList.Count})";
+            SQLiteCommand myCommand = new SQLiteCommand(query, this.myConnection);
+            this.OpenConnection();
+
+            List<string> imageLocations = new List<string>();
+            using SQLiteDataReader rdr = myCommand.ExecuteReader();
+            while (rdr.Read())
+            {
+                imageLocations.Add(rdr.GetString(0));
+            }
+            this.CloseConnection();
+            return imageLocations;
+        }
+
         /// #5:
         /// 
 
         public void create_Gallery(string userInputName, string userInputDesc)
         {
-            string query = "INSERT INTO gallery (created_at, title, description) VALUES (@date, @name, @desc";
+            string query = "INSERT INTO gallery (created_at, title, description) VALUES (@date, @name, @desc)";
             SQLiteCommand myCommand = new SQLiteCommand(query, this.myConnection);
             this.OpenConnection();
             myCommand.Parameters.AddWithValue("@date", System.DateTime.Now.ToShortDateString());
@@ -257,6 +302,17 @@ namespace DeskBooruApp
             myCommand.Parameters.AddWithValue("@g_id", userInputG_ID);
             var result = myCommand.ExecuteNonQuery();
             this.CloseConnection();
+        }
+
+        // Recently added
+        public var recently_Added(int imageID)
+        {
+            string query = "SELECT ID FROM images ORDER BY DESC";
+            SQLiteCommand myCommand = new SQLiteCommand(query, this.myConnection);
+            this.OpenConnection();
+            var result = myCommand.ExecuteNonQuery();
+            this.CloseConnection();
+            return result;
         }
     }
 }
