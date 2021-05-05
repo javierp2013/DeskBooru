@@ -366,5 +366,18 @@ namespace WindowsFormsApp1
             db.CloseConnection();
             db.dispose();
         }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            GalleriesImageTab.SelectedTab = HelpPanel;
+        }
+        private void mascot_mouseHover(object sender, EventArgs e)
+        {
+            this.pictureBox12.BackgroundImage = new Bitmap(DeskBooruApp.Properties.Resources.cameraBuddyHelp);
+        }
+        private void mascot_mouseLeave(object sender, EventArgs e)
+        {
+            this.pictureBox12.BackgroundImage = new Bitmap(DeskBooruApp.Properties.Resources.cameraBuddyEmptySpace);
+        }
     }
 }

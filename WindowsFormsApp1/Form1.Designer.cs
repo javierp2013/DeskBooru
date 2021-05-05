@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.GalleriesImageTab = new System.Windows.Forms.TabControl();
@@ -141,9 +142,9 @@
             this.gallBox1 = new System.Windows.Forms.PictureBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.GalleriesImageTab.SuspendLayout();
             this.SearchPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -201,7 +202,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gallBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gallBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gallBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // searchTextBox
@@ -262,6 +262,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(175, 641);
             this.panel2.TabIndex = 3;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.BackgroundImage")));
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox12.Location = new System.Drawing.Point(-10, 289);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(189, 288);
+            this.pictureBox12.TabIndex = 2;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
+            this.pictureBox12.MouseLeave += new System.EventHandler(this.mascot_mouseLeave);
+            this.pictureBox12.MouseHover += new System.EventHandler(this.mascot_mouseHover);
             // 
             // label10
             // 
@@ -1511,17 +1525,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.BackgroundImage")));
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox12.Location = new System.Drawing.Point(-10, 393);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(189, 184);
-            this.pictureBox12.TabIndex = 2;
-            this.pictureBox12.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1540,6 +1543,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.GalleriesImageTab.ResumeLayout(false);
             this.SearchPanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -1601,7 +1605,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gallBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gallBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gallBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
 
         }
