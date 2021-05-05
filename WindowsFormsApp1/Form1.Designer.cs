@@ -122,7 +122,7 @@
             this.HelpPanel = new System.Windows.Forms.TabPage();
             this.HelpPanelPictureBox = new System.Windows.Forms.PictureBox();
             this.HelpPanelTextBox = new System.Windows.Forms.TextBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.GallImagesPanel = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.gallBox15 = new System.Windows.Forms.PictureBox();
             this.gallBox14 = new System.Windows.Forms.PictureBox();
@@ -183,7 +183,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Fave1)).BeginInit();
             this.HelpPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HelpPanelPictureBox)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.GallImagesPanel.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gallBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gallBox14)).BeginInit();
@@ -291,7 +291,7 @@
             this.GalleriesImageTab.Controls.Add(this.GalleriesPanel);
             this.GalleriesImageTab.Controls.Add(this.FavoritePanel);
             this.GalleriesImageTab.Controls.Add(this.HelpPanel);
-            this.GalleriesImageTab.Controls.Add(this.tabPage1);
+            this.GalleriesImageTab.Controls.Add(this.GallImagesPanel);
             this.GalleriesImageTab.Location = new System.Drawing.Point(183, 2);
             this.GalleriesImageTab.Name = "GalleriesImageTab";
             this.GalleriesImageTab.SelectedIndex = 0;
@@ -331,7 +331,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
@@ -343,7 +343,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(209, 3);
             this.pictureBox2.Name = "pictureBox2";
@@ -355,7 +355,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(415, 3);
             this.pictureBox3.Name = "pictureBox3";
@@ -367,7 +367,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Location = new System.Drawing.Point(621, 3);
             this.pictureBox4.Name = "pictureBox4";
@@ -379,7 +379,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Location = new System.Drawing.Point(3, 209);
             this.pictureBox5.Name = "pictureBox5";
@@ -391,7 +391,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Location = new System.Drawing.Point(209, 209);
             this.pictureBox6.Name = "pictureBox6";
@@ -403,7 +403,7 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7.Location = new System.Drawing.Point(415, 209);
             this.pictureBox7.Name = "pictureBox7";
@@ -415,7 +415,7 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
+            this.pictureBox8.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8.Location = new System.Drawing.Point(621, 209);
             this.pictureBox8.Name = "pictureBox8";
@@ -950,6 +950,7 @@
             this.pictureBox9.Size = new System.Drawing.Size(275, 275);
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox10
             // 
@@ -1094,6 +1095,7 @@
             // Fave11
             // 
             this.Fave11.BackColor = System.Drawing.Color.White;
+            this.Fave11.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave11.Location = new System.Drawing.Point(451, 353);
             this.Fave11.Name = "Fave11";
@@ -1105,6 +1107,7 @@
             // Fave12
             // 
             this.Fave12.BackColor = System.Drawing.Color.White;
+            this.Fave12.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave12.Location = new System.Drawing.Point(285, 353);
             this.Fave12.Name = "Fave12";
@@ -1142,6 +1145,7 @@
             // Fave10
             // 
             this.Fave10.BackColor = System.Drawing.Color.White;
+            this.Fave10.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave10.Location = new System.Drawing.Point(618, 194);
             this.Fave10.Name = "Fave10";
@@ -1153,6 +1157,7 @@
             // Fave15
             // 
             this.Fave15.BackColor = System.Drawing.Color.White;
+            this.Fave15.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave15.Location = new System.Drawing.Point(778, 353);
             this.Fave15.Name = "Fave15";
@@ -1164,6 +1169,7 @@
             // Fave9
             // 
             this.Fave9.BackColor = System.Drawing.Color.White;
+            this.Fave9.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave9.Location = new System.Drawing.Point(451, 194);
             this.Fave9.Name = "Fave9";
@@ -1175,6 +1181,7 @@
             // Fave14
             // 
             this.Fave14.BackColor = System.Drawing.Color.White;
+            this.Fave14.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave14.Location = new System.Drawing.Point(618, 353);
             this.Fave14.Name = "Fave14";
@@ -1186,6 +1193,7 @@
             // Fave8
             // 
             this.Fave8.BackColor = System.Drawing.Color.White;
+            this.Fave8.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave8.Location = new System.Drawing.Point(285, 194);
             this.Fave8.Name = "Fave8";
@@ -1197,6 +1205,7 @@
             // Fave13
             // 
             this.Fave13.BackColor = System.Drawing.Color.White;
+            this.Fave13.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave13.Location = new System.Drawing.Point(119, 353);
             this.Fave13.Name = "Fave13";
@@ -1208,6 +1217,7 @@
             // Fave7
             // 
             this.Fave7.BackColor = System.Drawing.Color.White;
+            this.Fave7.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave7.Location = new System.Drawing.Point(119, 194);
             this.Fave7.Name = "Fave7";
@@ -1219,7 +1229,7 @@
             // Fave6
             // 
             this.Fave6.BackColor = System.Drawing.Color.White;
-            this.Fave6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave6.BackgroundImage")));
+            this.Fave6.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave6.Location = new System.Drawing.Point(778, 194);
             this.Fave6.Name = "Fave6";
@@ -1231,7 +1241,7 @@
             // Fave5
             // 
             this.Fave5.BackColor = System.Drawing.Color.White;
-            this.Fave5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave5.BackgroundImage")));
+            this.Fave5.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave5.Location = new System.Drawing.Point(778, 31);
             this.Fave5.Name = "Fave5";
@@ -1243,7 +1253,7 @@
             // Fave4
             // 
             this.Fave4.BackColor = System.Drawing.Color.White;
-            this.Fave4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave4.BackgroundImage")));
+            this.Fave4.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave4.Location = new System.Drawing.Point(618, 31);
             this.Fave4.Name = "Fave4";
@@ -1255,7 +1265,7 @@
             // Fave3
             // 
             this.Fave3.BackColor = System.Drawing.Color.White;
-            this.Fave3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave3.BackgroundImage")));
+            this.Fave3.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave3.Location = new System.Drawing.Point(451, 31);
             this.Fave3.Name = "Fave3";
@@ -1267,7 +1277,7 @@
             // Fave2
             // 
             this.Fave2.BackColor = System.Drawing.Color.White;
-            this.Fave2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave2.BackgroundImage")));
+            this.Fave2.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave2.Location = new System.Drawing.Point(285, 31);
             this.Fave2.Name = "Fave2";
@@ -1279,7 +1289,7 @@
             // Fave1
             // 
             this.Fave1.BackColor = System.Drawing.Color.White;
-            this.Fave1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave1.BackgroundImage")));
+            this.Fave1.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.Fave1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave1.Location = new System.Drawing.Point(119, 31);
             this.Fave1.Name = "Fave1";
@@ -1321,16 +1331,16 @@
             this.HelpPanelTextBox.TabIndex = 0;
             this.HelpPanelTextBox.Text = resources.GetString("HelpPanelTextBox.Text");
             // 
-            // tabPage1
+            // GallImagesPanel
             // 
-            this.tabPage1.Controls.Add(this.panel4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(956, 581);
-            this.tabPage1.TabIndex = 7;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.GallImagesPanel.Controls.Add(this.panel4);
+            this.GallImagesPanel.Location = new System.Drawing.Point(4, 24);
+            this.GallImagesPanel.Name = "GallImagesPanel";
+            this.GallImagesPanel.Padding = new System.Windows.Forms.Padding(3);
+            this.GallImagesPanel.Size = new System.Drawing.Size(956, 581);
+            this.GallImagesPanel.TabIndex = 7;
+            this.GallImagesPanel.Text = "Galleries Images";
+            this.GallImagesPanel.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -1586,7 +1596,7 @@
             this.HelpPanel.ResumeLayout(false);
             this.HelpPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HelpPanelPictureBox)).EndInit();
-            this.tabPage1.ResumeLayout(false);
+            this.GallImagesPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gallBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gallBox14)).EndInit();
@@ -1705,7 +1715,7 @@
         private System.Windows.Forms.PictureBox Fave12;
         private System.Windows.Forms.PictureBox Fave11;
         private System.Windows.Forms.TabControl GalleriesImages;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage GallImagesPanel;
         private System.Windows.Forms.TabControl Galleries;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox gallBox6;
