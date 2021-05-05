@@ -366,5 +366,10 @@ namespace WindowsFormsApp1
             db.CloseConnection();
             db.dispose();
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            TabControl.SelectedTab = GallImagesPanel;
+        }
     }
 }
