@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.GalleriesImageTab = new System.Windows.Forms.TabControl();
@@ -143,6 +144,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.GalleriesImageTab.SuspendLayout();
             this.SearchPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -253,12 +255,27 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.pictureBox12);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Location = new System.Drawing.Point(2, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(175, 641);
             this.panel2.TabIndex = 3;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.BackgroundImage")));
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox12.Location = new System.Drawing.Point(-10, 289);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(189, 288);
+            this.pictureBox12.TabIndex = 2;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
+            this.pictureBox12.MouseLeave += new System.EventHandler(this.mascot_mouseLeave);
+            this.pictureBox12.MouseHover += new System.EventHandler(this.mascot_mouseHover);
             // 
             // label10
             // 
@@ -1334,7 +1351,6 @@
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = global::DeskBooruApp.Properties.Resources.BG_Galleries;
             this.panel4.Controls.Add(this.gallBox15);
             this.panel4.Controls.Add(this.gallBox14);
             this.panel4.Controls.Add(this.gallBox13);
@@ -1357,7 +1373,6 @@
             // 
             // gallBox15
             // 
-            this.gallBox15.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox15.Location = new System.Drawing.Point(774, 397);
             this.gallBox15.Name = "gallBox15";
@@ -1368,7 +1383,6 @@
             // 
             // gallBox14
             // 
-            this.gallBox14.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox14.Location = new System.Drawing.Point(599, 397);
             this.gallBox14.Name = "gallBox14";
@@ -1379,7 +1393,6 @@
             // 
             // gallBox13
             // 
-            this.gallBox13.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox13.Location = new System.Drawing.Point(425, 397);
             this.gallBox13.Name = "gallBox13";
@@ -1390,7 +1403,6 @@
             // 
             // gallBox12
             // 
-            this.gallBox12.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox12.Location = new System.Drawing.Point(249, 397);
             this.gallBox12.Name = "gallBox12";
@@ -1401,7 +1413,6 @@
             // 
             // gallBox10
             // 
-            this.gallBox10.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox10.Location = new System.Drawing.Point(774, 224);
             this.gallBox10.Name = "gallBox10";
@@ -1412,7 +1423,6 @@
             // 
             // gallBox9
             // 
-            this.gallBox9.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox9.Location = new System.Drawing.Point(599, 224);
             this.gallBox9.Name = "gallBox9";
@@ -1423,7 +1433,6 @@
             // 
             // gallBox8
             // 
-            this.gallBox8.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox8.Location = new System.Drawing.Point(425, 224);
             this.gallBox8.Name = "gallBox8";
@@ -1434,7 +1443,6 @@
             // 
             // gallBox7
             // 
-            this.gallBox7.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox7.Location = new System.Drawing.Point(249, 224);
             this.gallBox7.Name = "gallBox7";
@@ -1445,7 +1453,6 @@
             // 
             // gallBox11
             // 
-            this.gallBox11.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox11.Location = new System.Drawing.Point(72, 397);
             this.gallBox11.Name = "gallBox11";
@@ -1456,7 +1463,6 @@
             // 
             // gallBox6
             // 
-            this.gallBox6.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox6.Location = new System.Drawing.Point(72, 224);
             this.gallBox6.Name = "gallBox6";
@@ -1467,7 +1473,6 @@
             // 
             // gallBox5
             // 
-            this.gallBox5.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox5.Location = new System.Drawing.Point(774, 50);
             this.gallBox5.Name = "gallBox5";
@@ -1478,7 +1483,6 @@
             // 
             // gallBox4
             // 
-            this.gallBox4.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox4.Location = new System.Drawing.Point(599, 50);
             this.gallBox4.Name = "gallBox4";
@@ -1489,7 +1493,6 @@
             // 
             // gallBox3
             // 
-            this.gallBox3.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox3.Location = new System.Drawing.Point(425, 50);
             this.gallBox3.Name = "gallBox3";
@@ -1500,7 +1503,6 @@
             // 
             // gallBox2
             // 
-            this.gallBox2.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox2.Location = new System.Drawing.Point(249, 50);
             this.gallBox2.Name = "gallBox2";
@@ -1511,7 +1513,6 @@
             // 
             // gallBox1
             // 
-            this.gallBox1.BackgroundImage = global::DeskBooruApp.Properties.Resources.noImage;
             this.gallBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gallBox1.Location = new System.Drawing.Point(72, 50);
             this.gallBox1.Name = "gallBox1";
@@ -1542,6 +1543,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.GalleriesImageTab.ResumeLayout(false);
             this.SearchPanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -1724,6 +1726,7 @@
         private System.Windows.Forms.PictureBox gallBox7;
         private System.Windows.Forms.PictureBox gallBox11;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }
 
