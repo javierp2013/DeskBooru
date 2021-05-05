@@ -143,6 +143,7 @@
             this.gallBox1 = new System.Windows.Forms.PictureBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -1030,6 +1031,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.label16);
             this.panel3.Controls.Add(this.button5);
@@ -1554,6 +1556,16 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(711, 26);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(133, 25);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "+ New Gallery";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1758,6 +1770,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Button button6;
     }
 }
 

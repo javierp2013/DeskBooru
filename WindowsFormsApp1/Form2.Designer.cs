@@ -36,6 +36,7 @@ namespace DeskBooruApp
             this.InfoLabel2 = new System.Windows.Forms.Label();
             this.InfoCommentTextBox = new System.Windows.Forms.TextBox();
             this.InfoSaveButton = new System.Windows.Forms.Button();
+            this.Form2_Refresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.InfoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +79,7 @@ namespace DeskBooruApp
             this.InfoLabel2.BackColor = System.Drawing.Color.Transparent;
             this.InfoLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.InfoLabel2.ForeColor = System.Drawing.SystemColors.Control;
-            this.InfoLabel2.Location = new System.Drawing.Point(88, 556);
+            this.InfoLabel2.Location = new System.Drawing.Point(88, 579);
             this.InfoLabel2.Name = "InfoLabel2";
             this.InfoLabel2.Size = new System.Drawing.Size(89, 21);
             this.InfoLabel2.TabIndex = 3;
@@ -86,7 +87,7 @@ namespace DeskBooruApp
             // 
             // InfoCommentTextBox
             // 
-            this.InfoCommentTextBox.Location = new System.Drawing.Point(88, 580);
+            this.InfoCommentTextBox.Location = new System.Drawing.Point(88, 603);
             this.InfoCommentTextBox.Multiline = true;
             this.InfoCommentTextBox.Name = "InfoCommentTextBox";
             this.InfoCommentTextBox.PlaceholderText = "Write any comments you want to attach to this image";
@@ -99,13 +100,27 @@ namespace DeskBooruApp
             this.InfoSaveButton.FlatAppearance.BorderSize = 0;
             this.InfoSaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InfoSaveButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.InfoSaveButton.Location = new System.Drawing.Point(190, 654);
+            this.InfoSaveButton.Location = new System.Drawing.Point(190, 677);
             this.InfoSaveButton.Name = "InfoSaveButton";
             this.InfoSaveButton.Size = new System.Drawing.Size(116, 22);
             this.InfoSaveButton.TabIndex = 5;
             this.InfoSaveButton.Text = "Save";
             this.InfoSaveButton.UseVisualStyleBackColor = true;
             this.InfoSaveButton.Click += new System.EventHandler(this.InfoSaveButton_Click);
+            // 
+            // Form2_Refresh
+            // 
+            this.Form2_Refresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Form2_Refresh.BackgroundImage")));
+            this.Form2_Refresh.FlatAppearance.BorderSize = 0;
+            this.Form2_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Form2_Refresh.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Form2_Refresh.Location = new System.Drawing.Point(190, 559);
+            this.Form2_Refresh.Name = "Form2_Refresh";
+            this.Form2_Refresh.Size = new System.Drawing.Size(116, 22);
+            this.Form2_Refresh.TabIndex = 6;
+            this.Form2_Refresh.Text = "Refresh";
+            this.Form2_Refresh.UseVisualStyleBackColor = true;
+            this.Form2_Refresh.Click += new System.EventHandler(this.Form2_Refresh_Click);
             // 
             // Form2
             // 
@@ -114,7 +129,8 @@ namespace DeskBooruApp
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(506, 688);
+            this.ClientSize = new System.Drawing.Size(506, 707);
+            this.Controls.Add(this.Form2_Refresh);
             this.Controls.Add(this.InfoSaveButton);
             this.Controls.Add(this.InfoCommentTextBox);
             this.Controls.Add(this.InfoLabel2);
@@ -139,5 +155,6 @@ namespace DeskBooruApp
         private System.Windows.Forms.Label InfoLabel2;
         private System.Windows.Forms.TextBox InfoCommentTextBox;
         private System.Windows.Forms.Button InfoSaveButton;
+        private System.Windows.Forms.Button Form2_Refresh;
     }
 }

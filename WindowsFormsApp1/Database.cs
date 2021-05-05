@@ -241,12 +241,12 @@ namespace DeskBooruApp
 
         public void create_Gallery(string userInputName, string userInputDesc)
         {
-            string query = "INSERT INTO gallery (created_at, title, description) VALUES (@date, @name, @desc";
+            string query = "INSERT INTO gallery (created_at, title, description) VALUES (@date, @name, @desc)";
             SQLiteCommand myCommand = new SQLiteCommand(query, this.myConnection);
             this.OpenConnection();
             myCommand.Parameters.AddWithValue("@date", System.DateTime.Now.ToShortDateString());
-            myCommand.Parameters.AddWithValue("@image", userInputName);
-            myCommand.Parameters.AddWithValue("@tag", userInputDesc);
+            myCommand.Parameters.AddWithValue("@name", userInputName);
+            myCommand.Parameters.AddWithValue("@desc", userInputDesc);
             var result = myCommand.ExecuteNonQuery();
             this.CloseConnection();
         }
@@ -291,6 +291,15 @@ namespace DeskBooruApp
             SQLiteCommand myCommand = new SQLiteCommand(query, this.myConnection);
             this.OpenConnection();
             myCommand.Parameters.AddWithValue("@g_id", userInputG_ID);
+            var result = myCommand.ExecuteNonQuery();
+            this.CloseConnection();
+        }
+        public void Add_Comment(int img_id, string text)
+        {
+            string query = "INSERT INTO images (image_comment) VALUES (@img_comment)";
+            SQLiteCommand myCommand = new SQLiteCommand(query, this.myConnection);
+            this.OpenConnection();
+            myCommand.Parameters.AddWithValue("@img_comment", text);
             var result = myCommand.ExecuteNonQuery();
             this.CloseConnection();
         }
