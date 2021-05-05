@@ -127,9 +127,6 @@
   <data name="IMG_1610" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat Pictures\IMG_1610.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_1603" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cat Pictures\IMG_1603.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IMG_0784" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat Pictures\IMG_0784.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,6 +138,9 @@
   </data>
   <data name="IMG_E2661" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat Pictures\IMG_E2661.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_1739" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat Pictures\IMG_1739.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -156,6 +156,9 @@
   </data>
   <data name="beach1Fixed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beach1Fixed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_07881" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat Pictures\IMG_0788.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_2074" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat Pictures\IMG_2074.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,6 +184,9 @@
   <data name="IMG_0395" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat Pictures\IMG_0395.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cameraBuddyHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cameraBuddyHelp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="UFMS5628" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat Pictures\UFMS5628.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,8 +199,11 @@
   <data name="IMG_1004" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat Pictures\IMG_1004.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_07881" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cat Pictures\IMG_0788.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cameraBuddyEmptySpace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cameraBuddyEmptySpace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_1603" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat Pictures\IMG_1603.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_2500" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat Pictures\IMG_2500.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,10 +226,7 @@
   <data name="IMG_2809" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat Pictures\IMG_2809.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cameraBuddyHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cameraBuddyHelp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cameraBuddyEmptySpace" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cameraBuddyEmptySpace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="addFolder2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addFolder2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

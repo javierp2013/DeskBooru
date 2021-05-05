@@ -121,6 +121,7 @@
             this.Fave2 = new System.Windows.Forms.PictureBox();
             this.Fave1 = new System.Windows.Forms.PictureBox();
             this.HelpPanel = new System.Windows.Forms.TabPage();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.HelpPanelPictureBox = new System.Windows.Forms.PictureBox();
             this.HelpPanelTextBox = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -184,6 +185,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Fave2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fave1)).BeginInit();
             this.HelpPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HelpPanelPictureBox)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -301,6 +303,7 @@
             // 
             // GalleriesImageTab
             // 
+            this.GalleriesImageTab.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.GalleriesImageTab.Controls.Add(this.SearchPanel);
             this.GalleriesImageTab.Controls.Add(this.ImageTaggingPanel);
             this.GalleriesImageTab.Controls.Add(this.AddFolderPanel);
@@ -322,10 +325,10 @@
             this.SearchPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SearchPanel.BackgroundImage")));
             this.SearchPanel.Controls.Add(this.flowLayoutPanel1);
             this.SearchPanel.Controls.Add(this.panel1);
-            this.SearchPanel.Location = new System.Drawing.Point(4, 24);
+            this.SearchPanel.Location = new System.Drawing.Point(4, 27);
             this.SearchPanel.Name = "SearchPanel";
             this.SearchPanel.Padding = new System.Windows.Forms.Padding(3);
-            this.SearchPanel.Size = new System.Drawing.Size(956, 581);
+            this.SearchPanel.Size = new System.Drawing.Size(956, 578);
             this.SearchPanel.TabIndex = 0;
             this.SearchPanel.Text = "Search Panel";
             // 
@@ -462,10 +465,10 @@
             this.ImageTaggingPanel.Controls.Add(this.label2);
             this.ImageTaggingPanel.Controls.Add(this.AddImageAddTagTextBox);
             this.ImageTaggingPanel.Controls.Add(this.AddImageCurrentTagTexBox);
-            this.ImageTaggingPanel.Location = new System.Drawing.Point(4, 24);
+            this.ImageTaggingPanel.Location = new System.Drawing.Point(4, 27);
             this.ImageTaggingPanel.Name = "ImageTaggingPanel";
             this.ImageTaggingPanel.Padding = new System.Windows.Forms.Padding(3);
-            this.ImageTaggingPanel.Size = new System.Drawing.Size(956, 581);
+            this.ImageTaggingPanel.Size = new System.Drawing.Size(956, 578);
             this.ImageTaggingPanel.TabIndex = 1;
             this.ImageTaggingPanel.Text = "Add Images";
             // 
@@ -686,9 +689,9 @@
             this.AddFolderPanel.Controls.Add(this.AddFolderCurrentTagTextBox);
             this.AddFolderPanel.Controls.Add(this.AddFolderPictureBox);
             this.AddFolderPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.AddFolderPanel.Location = new System.Drawing.Point(4, 24);
+            this.AddFolderPanel.Location = new System.Drawing.Point(4, 27);
             this.AddFolderPanel.Name = "AddFolderPanel";
-            this.AddFolderPanel.Size = new System.Drawing.Size(956, 581);
+            this.AddFolderPanel.Size = new System.Drawing.Size(956, 578);
             this.AddFolderPanel.TabIndex = 2;
             this.AddFolderPanel.Text = "Add Folder";
             // 
@@ -904,10 +907,10 @@
             this.TagListPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TagListPanel.BackgroundImage")));
             this.TagListPanel.Controls.Add(this.button2);
             this.TagListPanel.Controls.Add(this.TagListRichTexBox);
-            this.TagListPanel.Location = new System.Drawing.Point(4, 24);
+            this.TagListPanel.Location = new System.Drawing.Point(4, 27);
             this.TagListPanel.Name = "TagListPanel";
             this.TagListPanel.Padding = new System.Windows.Forms.Padding(3);
-            this.TagListPanel.Size = new System.Drawing.Size(956, 581);
+            this.TagListPanel.Size = new System.Drawing.Size(956, 578);
             this.TagListPanel.TabIndex = 3;
             this.TagListPanel.Text = "Tag List";
             // 
@@ -937,10 +940,10 @@
             this.GalleriesPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("GalleriesPanel.BackgroundImage")));
             this.GalleriesPanel.Controls.Add(this.flowLayoutPanel2);
             this.GalleriesPanel.Controls.Add(this.panel3);
-            this.GalleriesPanel.Location = new System.Drawing.Point(4, 24);
+            this.GalleriesPanel.Location = new System.Drawing.Point(4, 27);
             this.GalleriesPanel.Name = "GalleriesPanel";
             this.GalleriesPanel.Padding = new System.Windows.Forms.Padding(3);
-            this.GalleriesPanel.Size = new System.Drawing.Size(956, 581);
+            this.GalleriesPanel.Size = new System.Drawing.Size(956, 578);
             this.GalleriesPanel.TabIndex = 5;
             this.GalleriesPanel.Text = "Galleries";
             // 
@@ -961,6 +964,7 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9.Location = new System.Drawing.Point(3, 3);
             this.pictureBox9.Name = "pictureBox9";
@@ -971,6 +975,7 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10.Location = new System.Drawing.Point(284, 3);
             this.pictureBox10.Name = "pictureBox10";
@@ -981,6 +986,7 @@
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
             this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox11.Location = new System.Drawing.Point(565, 3);
             this.pictureBox11.Name = "pictureBox11";
@@ -1101,16 +1107,17 @@
             this.FavoritePanel.Controls.Add(this.Fave3);
             this.FavoritePanel.Controls.Add(this.Fave2);
             this.FavoritePanel.Controls.Add(this.Fave1);
-            this.FavoritePanel.Location = new System.Drawing.Point(4, 24);
+            this.FavoritePanel.Location = new System.Drawing.Point(4, 27);
             this.FavoritePanel.Name = "FavoritePanel";
             this.FavoritePanel.Padding = new System.Windows.Forms.Padding(3);
-            this.FavoritePanel.Size = new System.Drawing.Size(956, 581);
+            this.FavoritePanel.Size = new System.Drawing.Size(956, 578);
             this.FavoritePanel.TabIndex = 6;
             this.FavoritePanel.Text = "Favorites";
             // 
             // Fave11
             // 
             this.Fave11.BackColor = System.Drawing.Color.White;
+            this.Fave11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave11.BackgroundImage")));
             this.Fave11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave11.Location = new System.Drawing.Point(451, 353);
             this.Fave11.Name = "Fave11";
@@ -1122,6 +1129,7 @@
             // Fave12
             // 
             this.Fave12.BackColor = System.Drawing.Color.White;
+            this.Fave12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave12.BackgroundImage")));
             this.Fave12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave12.Location = new System.Drawing.Point(285, 353);
             this.Fave12.Name = "Fave12";
@@ -1159,6 +1167,7 @@
             // Fave10
             // 
             this.Fave10.BackColor = System.Drawing.Color.White;
+            this.Fave10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave10.BackgroundImage")));
             this.Fave10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave10.Location = new System.Drawing.Point(618, 194);
             this.Fave10.Name = "Fave10";
@@ -1170,6 +1179,7 @@
             // Fave15
             // 
             this.Fave15.BackColor = System.Drawing.Color.White;
+            this.Fave15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave15.BackgroundImage")));
             this.Fave15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave15.Location = new System.Drawing.Point(778, 353);
             this.Fave15.Name = "Fave15";
@@ -1181,6 +1191,7 @@
             // Fave9
             // 
             this.Fave9.BackColor = System.Drawing.Color.White;
+            this.Fave9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave9.BackgroundImage")));
             this.Fave9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave9.Location = new System.Drawing.Point(451, 194);
             this.Fave9.Name = "Fave9";
@@ -1192,6 +1203,7 @@
             // Fave14
             // 
             this.Fave14.BackColor = System.Drawing.Color.White;
+            this.Fave14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave14.BackgroundImage")));
             this.Fave14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave14.Location = new System.Drawing.Point(618, 353);
             this.Fave14.Name = "Fave14";
@@ -1203,6 +1215,7 @@
             // Fave8
             // 
             this.Fave8.BackColor = System.Drawing.Color.White;
+            this.Fave8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave8.BackgroundImage")));
             this.Fave8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave8.Location = new System.Drawing.Point(285, 194);
             this.Fave8.Name = "Fave8";
@@ -1214,6 +1227,7 @@
             // Fave13
             // 
             this.Fave13.BackColor = System.Drawing.Color.White;
+            this.Fave13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave13.BackgroundImage")));
             this.Fave13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave13.Location = new System.Drawing.Point(119, 353);
             this.Fave13.Name = "Fave13";
@@ -1225,6 +1239,7 @@
             // Fave7
             // 
             this.Fave7.BackColor = System.Drawing.Color.White;
+            this.Fave7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Fave7.BackgroundImage")));
             this.Fave7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Fave7.Location = new System.Drawing.Point(119, 194);
             this.Fave7.Name = "Fave7";
@@ -1309,21 +1324,35 @@
             // 
             this.HelpPanel.BackColor = System.Drawing.Color.DimGray;
             this.HelpPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HelpPanel.BackgroundImage")));
+            this.HelpPanel.Controls.Add(this.pictureBox13);
             this.HelpPanel.Controls.Add(this.HelpPanelPictureBox);
             this.HelpPanel.Controls.Add(this.HelpPanelTextBox);
-            this.HelpPanel.Location = new System.Drawing.Point(4, 24);
+            this.HelpPanel.Location = new System.Drawing.Point(4, 27);
             this.HelpPanel.Name = "HelpPanel";
             this.HelpPanel.Padding = new System.Windows.Forms.Padding(3);
-            this.HelpPanel.Size = new System.Drawing.Size(956, 581);
+            this.HelpPanel.Size = new System.Drawing.Size(956, 578);
             this.HelpPanel.TabIndex = 4;
             this.HelpPanel.Text = "Help";
             // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox13.BackgroundImage")));
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox13.Location = new System.Drawing.Point(527, 303);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(380, 240);
+            this.pictureBox13.TabIndex = 2;
+            this.pictureBox13.TabStop = false;
+            // 
             // HelpPanelPictureBox
             // 
+            this.HelpPanelPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.HelpPanelPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HelpPanelPictureBox.BackgroundImage")));
-            this.HelpPanelPictureBox.Location = new System.Drawing.Point(579, 68);
+            this.HelpPanelPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HelpPanelPictureBox.Location = new System.Drawing.Point(527, 44);
             this.HelpPanelPictureBox.Name = "HelpPanelPictureBox";
-            this.HelpPanelPictureBox.Size = new System.Drawing.Size(268, 440);
+            this.HelpPanelPictureBox.Size = new System.Drawing.Size(380, 243);
             this.HelpPanelPictureBox.TabIndex = 1;
             this.HelpPanelPictureBox.TabStop = false;
             // 
@@ -1341,10 +1370,10 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(956, 581);
+            this.tabPage1.Size = new System.Drawing.Size(956, 578);
             this.tabPage1.TabIndex = 7;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1587,6 +1616,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Fave1)).EndInit();
             this.HelpPanel.ResumeLayout(false);
             this.HelpPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HelpPanelPictureBox)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -1727,6 +1757,7 @@
         private System.Windows.Forms.PictureBox gallBox11;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }
 

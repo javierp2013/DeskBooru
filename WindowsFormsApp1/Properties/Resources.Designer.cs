@@ -63,6 +63,16 @@ namespace DeskBooruApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addFolder2 {
+            get {
+                object obj = ResourceManager.GetObject("addFolder2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap beach1Fixed {
             get {
                 object obj = ResourceManager.GetObject("beach1Fixed", resourceCulture);
@@ -396,6 +406,16 @@ namespace DeskBooruApp.Properties {
         internal static System.Drawing.Bitmap noImage {
             get {
                 object obj = ResourceManager.GetObject("noImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search3 {
+            get {
+                object obj = ResourceManager.GetObject("search3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
