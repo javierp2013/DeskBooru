@@ -28,7 +28,9 @@ namespace DeskBooruApp
             {
                 this.InfoPictureBox.Image.Dispose();
             }
-            this.InfoPictureBox.Image = picture;
+            this.InfoPictureBox.Image = new Bitmap(picture);
+            this.InfoPictureBox.BackgroundImage = DeskBooruApp.Properties.Resources.DarkGradient;
+            this.InfoPictureBox.Refresh();
         }
     }
 }
